@@ -18,7 +18,7 @@ body {
 
 .wrapper{
     height: 4000px;
-    width:1500px;
+    width: 3000px;
     /* padding: 25px; */
     background: aliceblue;
     border-radius: 10px;
@@ -40,8 +40,8 @@ h1{
     justify-content: center;
 }
 .cards {
-    height: 75%;
-    width: 75%;
+    height: 100%;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
