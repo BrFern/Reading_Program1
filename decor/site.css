@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
   margin: 0;
-  padding: 25px;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
@@ -17,30 +17,21 @@ body {
 }
 
 .wrapper{
-    height: 4000px;
-    width: 3000px;
-    /* padding: 25px; */
+    height: 2500px;
+    width: 2000px;
+    padding: 25px;
     background: aliceblue;
     border-radius: 10px;
-
 }
 
-/* h1{
-    font-size: 100px;
-    max-width: 150px;
-    justify-content: center;
-}
 
-.material-icons {
-    font-size: 150px;
-} */
-.cards .card .view {
-    display: row;
+.cards, .card, .view {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 .cards {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -48,14 +39,20 @@ body {
 
 .cards .card {
     cursor: pointer;
-    height: calc(100%/ 4  -10px);
-    width: calc(100% /4 -10px);
+    list-style: none;
+    user-select: none;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    height: calc(100%/ 5);
+    width: calc(100% /5);
+    justify-content: space-between;
 }
 
-.cards .card .view {
-    width: 100%;
-    height: 100%;
-    background: white;
+ .cards, .card, .view {
+    /* width: 100%;
+    height: 50%; */
+    background: aliceblue;
     border-radius: 7px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
@@ -72,6 +69,8 @@ body {
     width: 150px;
     height: 150px;
 }
+
+
 
 table {
     width: 100%;
