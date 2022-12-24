@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightgray;
+}
+
+
+table {
+    width: 100%;
+    font-size: 50px;
+}
+
+.thead {
+    font-size: 100px;
+}
+
+
+#short_vowels {
+    align-content: center;
+
+}
+
+button {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 50px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color:aliceblue;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#f308f3;
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+    background-image: linear-gradient(to right, #bc52c5 0%, #6e0e6a 51%, #cf72e2 100%);
+    font-size: large;
+}
+
+button:hover{
+    background-position: right center;
+}
