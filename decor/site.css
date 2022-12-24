@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
   margin: 0;
-  padding: 0;
+  padding: 25px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
@@ -17,32 +17,60 @@ body {
 }
 
 .wrapper{
-    height: 2000px;
-    width: 1000px;
+    height: 4000px;
+    width:1500px;
+    /* padding: 25px; */
     background: aliceblue;
     border-radius: 10px;
 
 }
 
-.cards, .card, .view {
-    display: flex;
+h1{
+    font-size: 100px;
+    max-width: 150px;
+    justify-content: center;
+}
+
+.material-icons {
+    font-size: 150px;
+}
+.cards .card .view {
+    display: row;
     align-items: center;
     justify-content: center;
 }
 .cards {
-    height: 100%;
-    width: 100%;
+    height: 75%;
+    width: 75%;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .cards .card {
-    height: calc(100% / 4 -10px);
-    width: calc(100% / 4 );
+    cursor: pointer;
+    height: calc(75%/ 4  -10px);
+    width: calc(100% /4 -10px);
 }
+
+.cards .card .view {
+    width: 50%;
+    height: 50%;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.card .front-view {
+    display: none;
+}
+
 .card .back-view img {
     max-width: 150px;
 }
 
+img {
+    width: 150px;
+    height: 150px;
+}
 
 table {
     width: 100%;
@@ -81,7 +109,3 @@ button:hover{
     background-position: right center;
 }
 
-img {
-    width: 150px;
-    height: 150px;
-}
