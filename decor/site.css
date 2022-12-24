@@ -7,9 +7,40 @@
 }
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     text-align: center;
     font-family:'Poppins', sans-serif;
     background-color: lightgray;
+}
+
+.wrapper{
+    height: 2000px;
+    width: 1000px;
+    background: aliceblue;
+    border-radius: 10px;
+
+}
+
+.cards, .card, .view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards {
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    height: calc(100% / 4 -10px);
+    width: calc(100% / 4 );
+}
+.card .back-view img {
+    max-width: 150px;
 }
 
 
