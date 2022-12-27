@@ -50,9 +50,11 @@ body {
     justify-content: space-between;
 }
 
- .cards, .card, .view {
+ .cards, .card,.view {
     width: 100%;
     height: 100%;
+    /* user-select: none;
+    pointer-events: none; */
     position: absolute;
     background: aliceblue;
     border-radius: 7px;
@@ -61,27 +63,31 @@ body {
     transition: transform 0.20s linear;
 }
 
-.card .front-view img{
+/* .card .front-view img{
     width: 150px;
 }
 
-.card .back-view img{
+/* .card .back-view img{
+    max-width: 150px;
+    max-height: 150px;
+} */
+
+.card .back-view{
+    transform: rotateY(-180deg);
+} */
+
+/* For some reason ^^^ This fixed it. DO NOT DELETEEEEE */
+
+.card.flip .back-view img{
+    transform: rotateY(0);
+    transform: rotateY(-180deg);
     max-width: 150px;
     max-height: 150px;
 }
 
-.card .back-view{
-    transform: rotateY(-180deg);
-}
-
-/* For some reason ^^^ This fixed it. DO NOT DELETEEEEE */
-
-.card:hover .back-view {
-    transform: rotateY(0);
-}
-
-.card:hover .front-view {
+.card.flip .front-view img{
     transform: rotateY(180deg);
+    width: 150px;
 }
 
 
