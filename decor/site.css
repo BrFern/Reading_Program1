@@ -22,6 +22,7 @@ body {
     padding: 25px;
     background: aliceblue;
     border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1)
 }
 
 
@@ -39,8 +40,8 @@ body {
 
 .cards .card {
     cursor: pointer;
-    /* list-style: none;
-    user-select: none; */
+    list-style: none;
+    user-select: none;
     position: relative;
     perspective: 800px;
     transform-style: preserve-3d;
@@ -55,13 +56,13 @@ body {
     position: absolute;
     background: aliceblue;
     border-radius: 7px;
+    backface-visibility: hidden;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: transform 0.50s linear;
 }
 
-
-.card:hover .front-view {
-    transform: rotateY(-180deg);
+.card .front-view img{
+    width: 150px;
 }
 
 .card .back-view img{
@@ -69,10 +70,25 @@ body {
     max-height: 150px;
 }
 
+.card .back-view{
+    transform: rotateY(-180deg);
+}
+
+/* For some reason ^^^ This fixed it. DO NOT DELETEEEEE */
+
+
+.card:hover .front-view {
+    transform: rotateY(-180deg);
+}
 
 .card:hover .back-view {
     transform: rotateY(0deg);
 }
+
+
+
+
+
 
 
 
